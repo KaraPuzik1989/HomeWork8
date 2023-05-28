@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 60px 0;
+  margin: auto;
+  position: absolute;
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.mob-menu {
+  display: none;
+}
+.header-wrapper__item h1 {
+  color: #f1cdb3;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 6%;
+  vertical-align: center;
+  margin-bottom: 10px;
+}
+.header-wrapper__item p {
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 10%;
+  vertical-align: center;
+}
+.header-wrapper__item ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 443px;
+  vertical-align: auto;
+}
+.header-wrapper__item a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+a:active {
+  cursor: pointer;
+  border-bottom: #f1cdb3 solid 3px;
+}
+.hero {
+  display: flex;
+  padding-top: 180px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: url(img/start-screen-background.jpg),
+    radial-gradient(#5b483a, #262425);
+  background-size: cover;
+}
+.hero h2 {
+  max-width: 310px;
+  margin-top: 163px;
+  color: #ffffff;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57px;
+  vertical-align: middle;
+}
+.hero p {
+  max-width: 460px;
+  margin-top: 42px;
+  color: #cdcdcd;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  vertical-align: middle;
+  margin-bottom: 42px;
+}
+.right {
+  max-height: 728px;
+}
+.right img {
+  margin-right: none;
+}
+button {
+  color: #292929;
+  background-color: #f1cdb3;
+  width: 207px;
+  height: 52px;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  vertical-align: top;
+  letter-spacing: 6%;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  align-items: flex-start;
+}
+button:hover {
+  background-color: #fddcc4;
+}
+.main-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.contentabout {
+  max-width: 430px;
+  margin-top: 80px;
+}
+.about {
+  display: flex;
+  align-items: center;
+}
+.Abouttheshelter {
+  margin: 80px 120px 100px 175px;
+}
+.contentabout h3 {
+  max-width: 370px;
+  color: #545454;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  vertical-align: top;
+  margin-top: 14px;
+  margin-bottom: 25px;
+}
+.one {
+  max-width: 430px;
+  color: #4c4c4c;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  vertical-align: center;
+  margin-bottom: 25px;
+}
+.two {
+  max-width: 430px;
+  color: #4c4c4c;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  vertical-align: center;
+  margin-bottom: 114px;
+}
+
+@media (max-width: 780px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero h2 {
+    margin-top: 0;
+  }
+  .left {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    margin-top: 100px;
+    max-width: 100%;
+  }
+  .header-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .left button {
+    margin: auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .about {
+    margin-top: 80px;
+  }
+  .contentabout {
+    margin: 80px 139px 0 139px;
+  }
+  .contentabout h3 {
+    margin-top: 0;
+  }
+  .about {
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-direction: column-reverse;
+  }
+  .two {
+    margin-bottom: 0;
+  }
+  .Abouttheshelter {
+    margin-left: 69px;
+    margin-right: 69px;
+  }
+}
+
+@media (max-width: 565px) {
+  .mob-menu {
+    display: inline;
+  }
+  header {
+    padding: 30px 0;
+  }
+  nav {
+    display: none;
+  }
+  .hero {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 150px;
+    text-align: center;
+  }
+  .header-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header-wrapper__item h1 {
+    color: #f1cdb3;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 6%;
+    align: center;
+  }
+  .hero h2 {
+    color: #ffffff;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32.5px;
+    align: center;
+  }
+  .hero p {
+    vertical-align: center;
+    align: center;
+  }
+  .button {
+    margin-bottom: 105px;
+  }
+  .right {
+    width: 260px;
+    height: 272px;
+    margin: auto;
+    margin-top: 105px;
+  }
+  .hero img {
+    margin-left: 30px;
+  }
+  .mob-menu {
+    margin-right: 53px;
+    vertical-align: middle;
+  }
+  .mob-menu img {
+    padding-top: 19px;
+  }
+  .about {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 300px;
+    margin-top: 42px;
+    flex-direction: column-reverse;
+  }
+  .Abouttheshelter {
+    margin: 42px 20px 0 20px;
+    max-width: 300px;
+  }
+  .contentabout h3 {
+    width: 300px;
+    color: #545454;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32.5px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .contentabout {
+    margin-top: 0;
+  }
+  .one {
+    margin-bottom: 22px;
+  }
+}
